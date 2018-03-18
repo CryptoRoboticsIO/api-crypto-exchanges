@@ -14,12 +14,8 @@
   // Cache
 
   $cache = new cacheBase;
-  if($exchange == 'waves'){
-    $cache->selectCache('markets_'.$exchange, 12000000000);
-  }else{
-    $cache->selectCache('markets_'.$exchange, 5);
-  }
-
+  $cache->selectCache('markets_'.$exchange, 5);
+  
 
   // Bittrex (/markets?exchange=bittrex)
 
